@@ -11,6 +11,7 @@ public class Main {
         strategies.put("1", new CarStrategy());
         strategies.put("2", new WalkStrategy());
         strategies.put("3", new CycleStrategy());
+        strategies.put("4", new PublicTransportStrategy());
 
         Navigator navigator = new Navigator(strategies.get("1"));
         Scanner scanner = new Scanner(System.in);
